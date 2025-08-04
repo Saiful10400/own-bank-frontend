@@ -2,7 +2,7 @@ import axios from "axios";
 import type { TTransaction } from "../types/transaction.types";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api", // change for production
+  baseURL: "https://mybank-pi.vercel.app/api", // change for production
 });
 
 export const getTransactions = (params?: {
