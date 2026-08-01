@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import type { FormEvent } from "react";
 import { createInvestment } from "../utils/transaction.api";
 
-type TInvestmentForm = {
+ export type TInvestmentForm = {
     personName: string;
     phone: string;
     amount: number;

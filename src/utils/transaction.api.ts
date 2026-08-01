@@ -1,5 +1,6 @@
 import axios from "axios";
 import type { TTransaction } from "../types/transaction.types";
+import type { TInvestmentForm } from "../page/AddInvestment";
 
 const API = axios.create({
   // baseURL: "https://mybank-pi.vercel.app/api", 
@@ -26,5 +27,5 @@ export const deleteTransaction = (id: string) =>
 
 
 // investment api.
-export const createInvestment = (data: any) =>
+export const createInvestment = (data: TInvestmentForm) =>
   API.post("/investments", data);
