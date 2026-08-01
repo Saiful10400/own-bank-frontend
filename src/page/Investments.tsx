@@ -46,7 +46,7 @@ export default function Investments() {
     useEffect(() => {
         getInvestments();
     }, [page]);
-
+ 
     return (
         <div className="mx-auto max-w-7xl rounded-xl bg-white shadow">
             {/* Header */}
