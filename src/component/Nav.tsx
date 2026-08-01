@@ -8,6 +8,7 @@ import {
   ChevronDown,
   ChevronUp,
   Landmark,
+  LandmarkIcon,
 } from "lucide-react";
 
 const links = [
@@ -20,6 +21,11 @@ const links = [
     name: "Transactions",
     path: "/transactions",
     icon: ArrowLeftRight,
+  },
+  {
+    name: "Investments",
+    path: "/investments",
+    icon: LandmarkIcon,
   },
 ];
 
@@ -61,7 +67,7 @@ export default function Sidebar() {
           {/* Add Menu */}
           <button
             onClick={() => setOpenAdd(!openAdd)}
-            className="w-full flex items-center justify-between rounded-lg px-4 py-3 hover:bg-gray-100 text-gray-700"
+            className="w-full flex items-center justify-between rounded-lg px-4 py-3 hover:bg-gray-100 text-gray-700 cursor-pointer"
           >
             <div className="flex items-center gap-3">
               <PlusCircle size={20} />

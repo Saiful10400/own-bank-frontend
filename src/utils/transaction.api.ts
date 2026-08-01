@@ -23,3 +23,8 @@ export const updateTransaction = (id: string, data: Partial<TTransaction>) =>
 
 export const deleteTransaction = (id: string) =>
   API.delete(`/transactions/${id}`);
+
+
+// investment api.
+export const createInvestment = (data: any) =>
+  API.post("/investments", data);
