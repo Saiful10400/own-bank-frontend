@@ -29,7 +29,7 @@ export default function Investments() {
             setLoading(true);
 
             const response = await fetch(
-                `http://localhost:5000/api/investments?page=${page}`
+                `https://mybank-pi.vercel.app/api/investments?page=${page}`
             );
 
             const result: TApiResponse = await response.json();

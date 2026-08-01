@@ -3,8 +3,8 @@ import type { TTransaction } from "../types/transaction.types";
 import type { TInvestmentForm } from "../page/AddInvestment";
 
 const API = axios.create({
-  // baseURL: "https://mybank-pi.vercel.app/api", 
-  baseURL: "http://localhost:5000/api", 
+  baseURL: "https://mybank-pi.vercel.app/api", 
+  // baseURL: "http://localhost:5000/api", 
 });
 
 export const getTransactions = (params?: {
