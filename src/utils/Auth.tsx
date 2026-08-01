@@ -7,13 +7,16 @@ type AuthProps = {
 };
 
 const Auth = ({ children }: AuthProps) => {
-    const [auth, setAuth] = useState<boolean>(false)
+
+    const [reRander, setReRander] = useState(false)
+
 
     const authIngFn = () => {
-        setAuth(true)
+        setReRander(!reRander)
+        localStorage.setItem("auth", "true")
     }
 
-    if (auth) {
+    if (localStorage.getItem("auth") === "true") {
         return children
     } else {
         return <Login fn={authIngFn} />
